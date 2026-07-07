@@ -47,7 +47,8 @@ function renderUpcoming() {
     upcomingSection.innerHTML = "";
 
     if (upcoming.length === 0) {
-        upcomingSection.innerHTML = `<p class="empty-hint">Keine weiteren Spiele geplant.</p>`;
+        upcomingSection.innerHTML = `<p class="empty-hint"> 🏆 Sieger: <strong>${getPlayerName(winnerId)}</strong>
+ </p>`;
         return;
     }
 
@@ -64,7 +65,7 @@ function renderUpcoming() {
                 </span>
                 <span class="result-row__meta">${match.group ? `Gruppe ${match.group}` : match.phase}</span>
             </span>
-            <span class="result-row__next">${match.time ?? "–"} · ${match.table ?? "–"}</span>
+            <span class="result-row__next">ausstehend</span>
         `;
         list.appendChild(row);
     });
