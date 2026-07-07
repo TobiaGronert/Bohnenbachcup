@@ -12,7 +12,7 @@ function buildScheduleRow(match) {
         row.classList.add("is-live");
     }
 
-    let right = `<span class="result-row__next">${match.time ?? "–"} · ${match.table ?? "–"}</span>`;
+    let right = `<span class="result-row__next">$$</span>`;
 
     if (match.status === "gespielt") {
         right = `<span class="result-row__score">${formatResult(match)}</span>`;
@@ -21,8 +21,8 @@ function buildScheduleRow(match) {
     }
 
     const meta = match.phase === "gruppe"
-        ? `Gruppe ${match.group} · ${match.time ?? "–"} · ${match.table ?? "–"}`
-        : `${match.phase} · ${match.time ?? "–"} · ${match.table ?? "–"}`;
+        ? `Gruppe ${match.group} · ${match.time ?? "–"} `
+        : `${match.phase} · ${match.id ?? "–"}`;
 
     row.innerHTML = `
         <span>
