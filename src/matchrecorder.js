@@ -14,7 +14,6 @@ function saveMatches(matches) {
         "utf8"
     );
 }
-
 function ask(question, rl) {
     return new Promise(resolve => {
         rl.question(question, answer => resolve(answer));

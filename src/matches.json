@@ -8,8 +8,22 @@
         "player2Id": "ben-m",
         "table": "Platte 1",
         "time": "14:00",
-        "status": "live",
-        "result": null
+        "status": "gespielt",
+        "result": {
+            "winnerId": "anna-k",
+            "player1Sets": 2,
+            "player2Sets": 0,
+            "sets": [
+                {
+                    "player1": 11,
+                    "player2": 8
+                },
+                {
+                    "player1": 11,
+                    "player2": 6
+                }
+            ]
+        }
     },
     {
         "id": 2,
@@ -20,8 +34,22 @@
         "player2Id": "david-r",
         "table": "Platte 2",
         "time": "14:00",
-        "status": "live",
-        "result": null
+        "status": "gespielt",
+        "result": {
+            "winnerId": "david-r",
+            "player1Sets": 0,
+            "player2Sets": 2,
+            "sets": [
+                {
+                    "player1": 7,
+                    "player2": 11
+                },
+                {
+                    "player1": 9,
+                    "player2": 11
+                }
+            ]
+        }
     },
     {
         "id": 3,
@@ -32,7 +60,7 @@
         "player2Id": "greta-w",
         "table": "Platte 1",
         "time": "14:20",
-        "status": "geplant",
+        "status": "live",
         "result": null
     },
     {
@@ -44,7 +72,7 @@
         "player2Id": "ida-l",
         "table": "Platte 2",
         "time": "14:20",
-        "status": "geplant",
+        "status": "live",
         "result": null
     },
     {
