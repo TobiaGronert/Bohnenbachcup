@@ -319,6 +319,29 @@ main.wrap {
     border-left: 3px solid transparent;
 }
 
+.info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.info-card p {
+    margin-top: 0;
+}
+
+.info-card ol {
+    margin: 10px 0 0 18px;
+    padding: 0;
+}
+
+.info-card li {
+    margin-bottom: 6px;
+}
+
 /* ==========================================================
    Bracket teaser
    ========================================================== */

@@ -41,7 +41,7 @@ function buildScheduleRow(match) {
     const row = document.createElement("div");
     row.className = "result-row";
 
-    let right = `<span class="result-row__next">${match.time ?? "–"} · ${match.table ?? "–"}</span>`;
+    let right = `<span class="result-row__next">ausstehend</span>`;
 
     if (match.status === "gespielt") {
         right = `<span class="result-row__score">${formatResult(match)}</span>`;
