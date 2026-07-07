@@ -12,7 +12,7 @@ function buildScheduleRow(match) {
         row.classList.add("is-live");
     }
 
-    let right = `<span class="result-row__next">$$</span>`;
+    let right = `<span class="result-row__next">- </span>`;
 
     if (match.status === "gespielt") {
         right = `<span class="result-row__score">${formatResult(match)}</span>`;
