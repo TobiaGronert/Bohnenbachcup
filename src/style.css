@@ -323,8 +323,8 @@ main.wrap {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 16px;
-    font-size: 14px;
+    padding: 12px;
+    font-size: 10px;
     color: var(--text-muted);
     line-height: 1.6;
 }
